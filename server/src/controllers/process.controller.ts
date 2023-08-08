@@ -63,10 +63,10 @@ export const listAllProcess = async (req: Request, res: Response): Promise<void>
   }
 };
 
-export const findProcessById = async (req: Request, res: Response): Promise<void> => {
+export const findProcessByNumber = async (req: Request, res: Response): Promise<void> => {
   try {
-    const processId: number = parseInt(req.params.id);
-    const response = await db.query(`SELECT * FROM processos WHERE id = $1`, [processId]);
+    const processNumber: number = parseInt(req.params.number);
+    const response = await db.query(`SELECT * FROM processos WHERE numero = $1`, [processNumber]);
     res.status(200).send(response.rows);
   } catch (error: unknown) {
     if (error instanceof Error) {
