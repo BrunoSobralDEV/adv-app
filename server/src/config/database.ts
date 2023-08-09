@@ -1,7 +1,3 @@
-/**
- * Arquivo: config/database.js
- * Descrição: arquivo responsável pelas 'connectionStrings da aplicação: PostgreSQL.
- **/
 import { Pool, QueryResult } from 'pg';
 import dotenv from 'dotenv';
 dotenv.config();
