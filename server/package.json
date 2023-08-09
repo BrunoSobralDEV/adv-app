@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "api-juridico",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bruno Sobral",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
